@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Picture Result</title>
+</head>
+<body>
+    <h1>Profile Picture Result</h1>
+    {% if picture.enhanced_image %}
+        <img src="{{ picture.enhanced_image.url }}" alt="Enhanced Profile Picture">
+    {% else %}
+        <p>Your picture is being processed...</p>
+    {% endif %}
+</body>
+</html
